@@ -1,0 +1,8 @@
+<input type="Text" placeholder="Text" (keyup)="handleInput($event)">
+<p>{{input1}}</p>
+
+<input type="text" placeholder="Text" #input (keyup)="handleInput2(input.value)">
+<p>{{input2}}</p>
+
+<input type="text" placeholder="Text" #input (keyUp.enter)="handleInput3(input.value)">
+<p>{{input3}}</p>
